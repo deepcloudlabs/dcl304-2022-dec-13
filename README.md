@@ -1,2 +1,5 @@
-# dcl304-2022-dec-13
-DCL-304: Advanced JavaScript Programming
+# DCL-304: Advanced Javascript Programming
+
+These projects are created as part of the following training: DCL-304 "Advanced Javascript Programming"
+
+Please follow the link for the complete training catalog: https://www.deepcloudlabs.com/resources
