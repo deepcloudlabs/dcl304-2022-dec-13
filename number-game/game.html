@@ -5,7 +5,10 @@
         @import url("/node_modules/bootstrap/dist/css/bootstrap.css");
     </style>
     <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="utility.js"></script>
+    <script src="move.js"></script>
     <script src="game.js"></script>
+    <script src="app.js"></script>
     <meta charset="UTF-8">
     <title>Number Game</title>
 </head>
@@ -17,7 +20,32 @@
                <h3><div class="card-title">Game Console</div></h3>
            </div>
            <div class="card-body">
+                <div class="mb-3">
+                    <label for="numberOfMoves" class="form-label">Number of moves:</label>
+                    <span class="badge bg-info" id="numberOfMoves">0</span>
+                </div>
+               <div class="mb-3">
+                    <label for="counter" class="form-label">Counter:</label>
+                    <span class="badge bg-primary" id="counter">60</span>
+                </div>
+               <div class="mb-3">
+                    <label for="guess" class="form-label">Guess:</label>
+                    <input type="text" class="form-control" id="guess" value="50"></span>
+                   <button class="btn btn-success" id="play">Play</button>
+                </div>
+               <p></p>
+               <table class="table table-primary table-striped table-bordered table-responsive">
+                   <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Guess</th>
+                        <th>Message</th>
+                    </tr>
+                   </thead>
+                   <tbody id="moves">
 
+                   </tbody>
+               </table>
            </div>
        </div>
     </div>
