@@ -1,0 +1,11 @@
+{
+  "name": "module02",
+  "version": "1.0.0",
+  "scripts": {
+    "exercise01": "node exercise01.js",
+    "exercise02": "node exercise01.js",
+    "exercise03": "node exercise02.js"
+  },
+  "dependencies": {
+  }
+}
