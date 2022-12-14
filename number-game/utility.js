@@ -1,4 +1,4 @@
-let emptyElement = (element) => {
+const emptyElement = (element) => {
     var node = element;
     while (element.hasChildNodes()) {
         if (node.hasChildNodes()) {
@@ -9,3 +9,6 @@ let emptyElement = (element) => {
         }
     }
 } ;
+
+export function fun(){}
+export default emptyElement;

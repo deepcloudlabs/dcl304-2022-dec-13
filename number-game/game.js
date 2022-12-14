@@ -1,4 +1,6 @@
-class GameViewModel {
+import Move from "./move.js";
+
+export default class GameViewModel {
     constructor(updateView) {
         this.secret = this.createSecret();
         this.guess = 50;

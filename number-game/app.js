@@ -1,3 +1,7 @@
+import emptyElement, {fun} from "./utility.js";
+import GameViewModel from "./game.js";
+
+fun();
 let run = () => {
     const playButton = document.querySelector("#play");
     const guessInputText = document.querySelector("#guess");
@@ -5,8 +9,8 @@ let run = () => {
     const counter = document.querySelector("#counter");
     const movesBody = document.querySelector("#moves");
     const updateView = (model) => {
-        for (let key in model){
-            switch (key){
+        for (let key in model) {
+            switch (key) {
                 case "counter":
                     counter.innerText = model.counter;
                     break;
@@ -24,7 +28,7 @@ let run = () => {
                         tdGuess.appendChild(document.createTextNode(move.guess));
                         tdMessage.appendChild(document.createTextNode(move.message));
                     });
-                break;
+                    break;
             }
         }
     };
