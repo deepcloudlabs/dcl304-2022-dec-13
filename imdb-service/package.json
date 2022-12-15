@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "middleware": "nodemon service-api.js",
-    "websocket-client": "node websocket-client.js"
+    "middleware": "nodemon --trace-warnings application.js",
+    "websocket-client": "node clients/websocket-client.js",
+    "socketio-client": "node clients/socketio-client-app.js",
+    "kafka-consumer": "node clients/imdb-kafka-consumer.js"
   },
   "dependencies": {
     "express": "^4.18.2",
@@ -17,7 +19,8 @@
     "ws": "^8.11.0",
     "fetch-nodejs": "^0.2.1",
     "body-parser": "^1.20.1",
-    "socket.io": "^2.4.1"
+    "socket.io": "^2.4.1",
+    "socket.io-client": "2.4.0"
   },
   "keywords": [],
   "author": "",

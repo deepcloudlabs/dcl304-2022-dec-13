@@ -10,4 +10,4 @@ wsServer.on("connection", (ws) => {
     });
 });
 
-module.exports = wsServer;
+module.ws = ws;

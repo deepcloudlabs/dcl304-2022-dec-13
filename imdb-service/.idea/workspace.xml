@@ -5,15 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="531b7c98-7522-4b16-a927-646dd9617459" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/express-server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket-client.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket-service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocketio-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api-doc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/imdb-kafka-consumer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/socketio-client-app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration/kafka-producer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration/socketio-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration/websocket-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration/ws-service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imdb-api-command.js" beforeDir="false" afterPath="$PROJECT_DIR$/imdb-api-command.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpus.js" beforeDir="false" afterPath="$PROJECT_DIR$/utility/cpus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/express-server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imdb-api-command.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/imdb-api-command.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imdb-api-query.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/imdb-api-query.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imdb-schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/imdb-schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/movie.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/service-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/swagger.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket-client.js" beforeDir="false" afterPath="$PROJECT_DIR$/clients/websocket-client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocketio-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/websocketio-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +65,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "18.12.1",
     "javascript.nodejs.core.library.typings.version": "18.11.15",
-    "last_opened_file_path": "D:/var/workspace/github/dcl304-2022-dec-13/imdb-service",
+    "last_opened_file_path": "D:/var/workspace/github/dcl304-2022-dec-13/imdb-service/integration",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,11 +78,29 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\var\workspace\github\dcl304-2022-dec-13\imdb-service\integration" />
+      <recent name="D:\var\workspace\github\dcl304-2022-dec-13\imdb-service\database" />
+      <recent name="D:\var\workspace\github\dcl304-2022-dec-13\imdb-service\api" />
       <recent name="D:\var\workspace\github\dcl304-2022-dec-13\imdb-service" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\var\workspace\github\dcl304-2022-dec-13\imdb-service\resources" />
+      <recent name="D:\var\workspace\github\dcl304-2022-dec-13\imdb-service\clients" />
+      <recent name="D:\var\workspace\github\dcl304-2022-dec-13\imdb-service\utility" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.websocket-client">
-    <configuration name="cpus.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/cpus.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="Node.js.application.js">
+    <configuration name="application.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/application.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="kafka-consumer" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="kafka-consumer" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="middleware" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -75,6 +108,16 @@
       <command value="run" />
       <scripts>
         <script value="middleware" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="socketio-client" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="socketio-client" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -93,8 +136,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.middleware" />
+        <item itemvalue="npm.socketio-client" />
+        <item itemvalue="npm.kafka-consumer" />
+        <item itemvalue="Node.js.application.js" />
         <item itemvalue="npm.websocket-client" />
-        <item itemvalue="Node.js.cpus.js" />
       </list>
     </recent_temporary>
   </component>
@@ -107,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671022978046</updated>
       <workItem from="1671022979531" duration="1784000" />
-      <workItem from="1671083773050" duration="14786000" />
+      <workItem from="1671083773050" duration="29827000" />
     </task>
     <servers />
   </component>

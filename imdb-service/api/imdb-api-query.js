@@ -1,6 +1,6 @@
-const express = require("express");
-const router = express.Router();
-require("./imdb-schema")
+const {Router} = require("express");
+const router = Router();
+const {Movie} = require("../persistence/imdb-schema")
 
 //region GET /movies/tt324234 ✔
 router.get("/movies/:imdb",  (req, res) => {
@@ -41,4 +41,4 @@ router.get("/movies",  (req, res) => {
 })
 //endregion
 
-module.exports = router;
+module.exports = {apiQuery: router};

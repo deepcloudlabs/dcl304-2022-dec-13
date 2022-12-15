@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
-const connectionUrl = "mongodb://127.0.0.1:27017/imdb";
+
+const connectionUrl = "mongodb://kubernetes.docker.internal:27017/imdb";
+mongoose.set('strictQuery', true);
 mongoose.connect(
     connectionUrl,
     {
@@ -9,8 +11,6 @@ mongoose.connect(
         useUnifiedTopology: true
     }
 )
-
-mongoose.set('strictQuery', true);
 
 const genreSchema = new mongoose.Schema({
     "_id": Number,
@@ -47,10 +47,12 @@ const movieSchema = new mongoose.Schema({
         type: Number,
         required: true,
         min: 1900,
-        max:2023
+        max: 2023
     },
     directors: [directorSchema],
     genres: [genreSchema]
 });
 
 Movie = mongoose.model("movies1", movieSchema);
+
+exports.Movie = Movie
