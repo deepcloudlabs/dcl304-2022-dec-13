@@ -1,2 +1,3 @@
 const {server} = require("./api/api-service");
-require("./api/api-doc")
+const {swaggerApiDocument} = require("./api/api-doc")
+
