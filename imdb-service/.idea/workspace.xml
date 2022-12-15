@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="531b7c98-7522-4b16-a927-646dd9617459" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/rabbitmq-exercise/binance-websocket-client-rabbitmq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-exercise/trades-rabbit-consumer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,9 +116,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.websocket-client" />
-        <item itemvalue="npm.socketio-client" />
         <item itemvalue="npm.kafka-consumer" />
+        <item itemvalue="npm.socketio-client" />
+        <item itemvalue="npm.websocket-client" />
         <item itemvalue="npm.middleware" />
         <item itemvalue="Node.js.application.js" />
       </list>
@@ -129,7 +133,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671022978046</updated>
       <workItem from="1671022979531" duration="1784000" />
-      <workItem from="1671083773050" duration="31660000" />
+      <workItem from="1671083773050" duration="32008000" />
     </task>
     <servers />
   </component>
