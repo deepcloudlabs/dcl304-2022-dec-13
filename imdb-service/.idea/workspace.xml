@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="531b7c98-7522-4b16-a927-646dd9617459" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cpus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/express-server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket-client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocketio-service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imdb-api-command.js" beforeDir="false" afterPath="$PROJECT_DIR$/imdb-api-command.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/service-api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +57,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "D:/DEVEL/stage/opt/node-v18.12.1/node",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\dcl\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\222.4345.14\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -59,7 +66,7 @@
       <recent name="D:\var\workspace\github\dcl304-2022-dec-13\imdb-service" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.cpus.js">
+  <component name="RunManager" selected="npm.websocket-client">
     <configuration name="cpus.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/cpus.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -73,10 +80,21 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="websocket-client" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="websocket-client" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.cpus.js" />
         <item itemvalue="npm.middleware" />
+        <item itemvalue="npm.websocket-client" />
+        <item itemvalue="Node.js.cpus.js" />
       </list>
     </recent_temporary>
   </component>
@@ -89,7 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671022978046</updated>
       <workItem from="1671022979531" duration="1784000" />
-      <workItem from="1671083773050" duration="10041000" />
+      <workItem from="1671083773050" duration="14786000" />
     </task>
     <servers />
   </component>

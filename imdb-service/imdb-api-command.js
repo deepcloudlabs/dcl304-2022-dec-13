@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 require("./imdb-schema")
+//const ws = require("./websocket-service")
+const sessions = require("./websocketio-service")
 
 //region POST http://localhost:8100/movies ✔
 router.post("/movies",  (req, res) => {
@@ -13,6 +15,12 @@ router.post("/movies",  (req, res) => {
 
             } else {
                 res.status(200).send(status);
+/*                ws.clients.forEach(client => client.send(JSON.stringify(movie),(err)=>{
+                    console.log(err);
+                }));*/
+                sessions.forEach(session => session.emit("movie-events", JSON.stringify(movie)));
+                // const numOfListeners = ws.emit("movie-events", movie);
+                // console.log(`Message is sent to ${numOfListeners} listener(s)`);
             }
         }
     );
