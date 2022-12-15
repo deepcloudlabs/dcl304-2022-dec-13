@@ -1,0 +1,23 @@
+{
+  "_id": 2,
+  "directors": [
+    {
+      "_id": 2,
+      "imdb": "nm0001382",
+      "name": "Peter Hyams"
+    }
+  ],
+  "genres": [
+    {
+      "name": "Drama",
+      "_id": 2
+    },
+    {
+      "name": "Mystery",
+      "_id": 4
+    }
+  ],
+  "imdb": "tt1183251",
+  "title": "Beyond a Reasonable Doubt",
+  "year": 2009
+}

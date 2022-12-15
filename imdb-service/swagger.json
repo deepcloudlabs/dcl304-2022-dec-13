@@ -1,0 +1,205 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "IMDB API",
+    "description": "IMDB Application API",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:6001",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Movies",
+      "description": "API for movies"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/movies": {
+      "post": {
+        "tags": [
+          "Movies"
+        ],
+        "description": "Create new movie in system",
+        "parameters": [
+          {
+            "name": "movie",
+            "in": "body",
+            "description": "Movie that we want to create",
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "New movie is created",
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Get all movies in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update movie",
+        "tags": [
+          "Movies"
+        ],
+        "parameters": [
+          {
+            "name": "movie",
+            "in": "body",
+            "description": "Movie that we want to update",
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Movie is updated",
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            }
+          }
+        }
+      }
+    },
+    "/movies/{imdb}": {
+      "parameters": [
+        {
+          "name": "imdb",
+          "in": "path",
+          "required": true,
+          "description": "IMDB id of movie that we want to find",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Get movie with given IMDB id",
+        "responses": {
+          "200": {
+            "description": "Movie is found",
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete movie with given imdb id",
+        "tags": [
+          "Movies"
+        ],
+        "responses": {
+          "200": {
+            "description": "Movie is deleted",
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Movie": {
+      "required": [
+        "_id",
+        "imdb",
+        "title",
+        "year"
+      ],
+      "properties": {
+        "_id": {
+          "type": "number",
+          "uniqueItems": true
+        },
+        "imdb": {
+          "type": "string",
+          "uniqueItems": true
+        },
+        "title": {
+          "type": "string"
+        },
+        "year": {
+          "type": "number"
+        },
+        "genres": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Genre"
+          }
+        },
+        "directors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Director"
+          }
+        }
+      }
+    },
+    "Genre": {
+      "properties": {
+        "_id": {
+          "type": "number",
+          "uniqueItems": true
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "Director": {
+      "properties": {
+        "_id": {
+          "type": "number",
+          "uniqueItems": true
+        },
+        "imdb": {
+          "type": "string",
+          "uniqueItems": true
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "Movies": {
+      "type": "array",
+      "$ref": "#/definitions/Movie"
+    }
+  }
+}
