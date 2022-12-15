@@ -1,7 +1,28 @@
-// POST http://localhost:8100/movies
+const express = require("express");
+const router = express.Router();
+require("./imdb-schema")
 
-// PUT http://localhost:8100/movies
+//region POST http://localhost:8100/movies ✔
+router.post("/movies",  (req, res) => {
+    const movie = req.body;
+    const movieModel = new Movie(movie);
+    movieModel.save(
+        (err,status) => {
+            res.set("Content-Type", "application/json");
+            if (err) {
 
-// DELETE http://localhost:8100/movies/{imdb}
+            } else {
+                res.status(200).send(status);
+            }
+        }
+    );
+})
+//endregion
+
+//region PUT http://localhost:8100/movies ✘
+//endregion
+
+//region DELETE http://localhost:8100/movies/{imdb} ✘
+//endregion
 
 module.exports = router;

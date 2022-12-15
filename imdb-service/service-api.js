@@ -21,11 +21,11 @@ api.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerApiDocument));
 
 //endregion
 
-//region REST API ENDPOINTS
+//region REST API ENDPOINTS ✔
 const query = require("./imdb-api-query");
-//const command = require("./imdb-api-command")
+const command = require("./imdb-api-command")
 api.use("/", query);
-//api.use("/", command);
+api.use("/", command);
 //endregion
 
 //region KAFKA INTEGRATION (kafkajs)

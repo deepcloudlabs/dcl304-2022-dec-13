@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="531b7c98-7522-4b16-a927-646dd9617459" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imdb-api-query.js" beforeDir="false" afterPath="$PROJECT_DIR$/imdb-api-query.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imdb-api-command.js" beforeDir="false" afterPath="$PROJECT_DIR$/imdb-api-command.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/service-api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671022978046</updated>
       <workItem from="1671022979531" duration="1784000" />
-      <workItem from="1671083773050" duration="6537000" />
+      <workItem from="1671083773050" duration="7331000" />
     </task>
     <servers />
   </component>
