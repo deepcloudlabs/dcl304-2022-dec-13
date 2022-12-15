@@ -5,14 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="531b7c98-7522-4b16-a927-646dd9617459" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/api-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/imdb-api-command.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/imdb-api-command.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/integration/kafka-producer.js" beforeDir="false" afterPath="$PROJECT_DIR$/integration/kafka-producer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/integration/socketio-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/integration/socketio-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/integration/websocket-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/integration/websocket-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/integration/ws-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/integration/ws-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671022978046</updated>
       <workItem from="1671022979531" duration="1784000" />
-      <workItem from="1671083773050" duration="31492000" />
+      <workItem from="1671083773050" duration="31660000" />
     </task>
     <servers />
   </component>
