@@ -19,7 +19,24 @@ router.post("/movies",  (req, res) => {
 })
 //endregion
 
-//region PUT http://localhost:8100/movies ✘
+//region PUT http://localhost:8100/movies ✔
+router.put("/movies",  (req, res) => {
+    const movie = req.body;
+    const imdb = movie.imdb;
+    Movie.updateOne(
+        {imdb},
+        {$set: movie},
+        {upsert: false},
+        (err,status) => {
+            res.set("Content-Type", "application/json");
+            if (err) {
+
+            } else {
+                res.status(200).send(status);
+            }
+        }
+    );
+})
 //endregion
 
 //region DELETE http://localhost:8100/movies/{imdb} ✘
