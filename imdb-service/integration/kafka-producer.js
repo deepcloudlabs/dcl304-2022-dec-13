@@ -7,7 +7,7 @@ const kafka = new Kafka({
 const producer = kafka.producer({createPartitioner: Partitioners.LegacyPartitioner});
 
 producer.connect()
-    .then(() => console.log("Connected to the kafka broker."))
+    .then(() => console.log("Backend is connected to the Kafka Broker."))
     .catch(err => console.error(err));
 
 //endregion

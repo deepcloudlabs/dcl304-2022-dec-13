@@ -1,10 +1,11 @@
 const {Router} = require("express");
 
 class ImdbApiCommand {
-    constructor(Movie, socketIOService, kafkaProducer) {
+    constructor(Movie, socketIOService, plainWebSocketService,kafkaProducer) {
         this.Movie = Movie;
         this.socketIOService = socketIOService;
         this.kafkaProducer = kafkaProducer;
+        this.plainWebSocketService = plainWebSocketService;
         this.router = Router();
         this.router.post("/movies", (req, res) => {
             const movie = req.body;
@@ -16,10 +17,8 @@ class ImdbApiCommand {
 
                     } else {
                         res.status(200).send(status);
-                        /*                ws.clients.forEach(client => client.send(JSON.stringify(movie),(err)=>{
-                                            console.log(err);
-                                        }));*/
                         let message = JSON.stringify(movie);
+                        plainWebSocketService.sendMessage(message);
                         this.socketIOService.sendMessage("movie-events", message);
                         this.kafkaProducer.send({
                             topic: "imdb",

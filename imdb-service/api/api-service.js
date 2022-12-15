@@ -9,7 +9,7 @@ const port = 8100;
 const {api} = require("./api-config")
 const {Movie} = require("../persistence/imdb-schema")
 const {SocketIOServiceImpl} = require("../integration/socketio-service")
-const {apiQuery}= require("./imdb-api-query");
+const {apiQuery} = require("./imdb-api-query");
 const {ImdbApiCommand} = require("./imdb-api-command")
 const {SocketIOService} = require("../integration/ws-service");
 const {kafkaProducer} = require("../integration/kafka-producer")
@@ -18,9 +18,11 @@ const {kafkaProducer} = require("../integration/kafka-producer")
 let server = api.listen(port, () => {
     console.log(`Api is running at ${port}`);
 });
+const {PlainWebSocketService} = require("../integration/websocket-service")
 const socketIOServiceImpl = new SocketIOServiceImpl(server);
 const socketIOService = new SocketIOService(socketIOServiceImpl.sessions);
-const imdbApiCommand = new ImdbApiCommand(Movie, socketIOService, kafkaProducer);
+const plainWebSocketService = new PlainWebSocketService();
+const imdbApiCommand = new ImdbApiCommand(Movie, socketIOService, plainWebSocketService, kafkaProducer);
 api.use("/", apiQuery);
 api.use("/", imdbApiCommand.router);
 

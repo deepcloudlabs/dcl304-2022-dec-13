@@ -5,30 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="531b7c98-7522-4b16-a927-646dd9617459" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api/api-config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/api-doc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/api-service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/imdb-kafka-consumer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/socketio-client-app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/integration/kafka-producer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/integration/socketio-service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/integration/websocket-service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/integration/ws-service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpus.js" beforeDir="false" afterPath="$PROJECT_DIR$/utility/cpus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/express-server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imdb-api-command.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/imdb-api-command.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imdb-api-query.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/imdb-api-query.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imdb-schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/imdb-schema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/movie.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/api-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/imdb-api-command.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/imdb-api-command.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration/kafka-producer.js" beforeDir="false" afterPath="$PROJECT_DIR$/integration/kafka-producer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration/socketio-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/integration/socketio-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration/websocket-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/integration/websocket-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/integration/ws-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/integration/ws-service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/swagger.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocket-client.js" beforeDir="false" afterPath="$PROJECT_DIR$/clients/websocket-client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocketio-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/websocketio-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.middleware" />
+        <item itemvalue="npm.websocket-client" />
         <item itemvalue="npm.socketio-client" />
         <item itemvalue="npm.kafka-consumer" />
+        <item itemvalue="npm.middleware" />
         <item itemvalue="Node.js.application.js" />
-        <item itemvalue="npm.websocket-client" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +137,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671022978046</updated>
       <workItem from="1671022979531" duration="1784000" />
-      <workItem from="1671083773050" duration="29827000" />
+      <workItem from="1671083773050" duration="31492000" />
     </task>
     <servers />
   </component>

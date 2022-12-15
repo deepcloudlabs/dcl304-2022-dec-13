@@ -1,18 +1,13 @@
-const socketIo = require("socket.io");
+const socketio = require("socket.io");
 
 class SocketIOServiceImpl {
     constructor(server) {
         this.sessions = [];
-        this.io = socketIo.listen(server,{
-            "cors": {
-                "origins": "*",
-                "methods": ["GET", "POST", "PUT"]
-            }
-        });
+        this.io = socketio(server);
         this.io.on("connection", (session) => {
-            console.log(`new ws connection is open: ${session.id}`);
+            console.log(`New client has arrived through a websocket connection with session id [${session.id}].`);
             this.sessions.push(session);
-            this.io.on("disconnect",()=>{
+            this.io.on("disconnect", () => {
                 console.log(`connection is closed: ${session.id}`);
                 let new_sessions = this.sessions.filter(_session => _session.id !== session.id);
                 this.sessions.splice(0);
@@ -21,7 +16,5 @@ class SocketIOServiceImpl {
         });
     }
 }
-
-
 
 module.exports = {SocketIOServiceImpl};

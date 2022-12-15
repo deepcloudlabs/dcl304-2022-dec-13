@@ -19,8 +19,8 @@
     "ws": "^8.11.0",
     "fetch-nodejs": "^0.2.1",
     "body-parser": "^1.20.1",
-    "socket.io": "^2.4.1",
-    "socket.io-client": "2.4.0"
+    "socket.io": "4.5.4",
+    "socket.io-client": "4.5.4"
   },
   "keywords": [],
   "author": "",
