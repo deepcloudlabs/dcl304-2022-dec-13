@@ -3,7 +3,7 @@ const socketio = require("socket.io");
 class SocketIOServiceImpl {
     constructor(server) {
         this.sessions = [];
-        this.io = socketio(server);
+        this.io = socketio(server, {cors: {origin: "*"}});
         this.io.on("connection", (session) => {
             console.log(`New client has arrived through a websocket connection with session id [${session.id}].`);
             this.sessions.push(session);

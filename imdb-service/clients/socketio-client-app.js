@@ -4,6 +4,6 @@ client.on("connect", () => {
     console.log("Connected to the websocket server.");
     client.on("movie-events", event => {
         const movie = JSON.parse(event);
-        console.log(`New movie has arrived: ${movie.title}.`)
+        console.log(`New movie has arrived from socketio server: ${movie.title}.`)
     })
 })
