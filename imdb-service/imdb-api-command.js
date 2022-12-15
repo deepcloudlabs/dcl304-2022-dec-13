@@ -39,7 +39,21 @@ router.put("/movies",  (req, res) => {
 })
 //endregion
 
-//region DELETE http://localhost:8100/movies/{imdb} ✘
+//region DELETE http://localhost:8100/movies/{imdb} ✔
+router.delete("/movies/:imdb",  (req, res) => {
+    const imdb = req.params.imdb;
+    Movie.findOneAndDelete(
+        {imdb},
+        (err,deletedMovie) => {
+            res.set("Content-Type", "application/json");
+            if (err) {
+
+            } else {
+                res.status(200).send(deletedMovie);
+            }
+        }
+    );
+})
 //endregion
 
 module.exports = router;
