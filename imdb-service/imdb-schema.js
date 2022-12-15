@@ -1,13 +1,17 @@
 const mongoose = require("mongoose");
-const connectionUrl = "mongodb://localhost:27017/imdb";
+const connectionUrl = "mongodb://127.0.0.1:27017/imdb";
 mongoose.connect(
     connectionUrl,
     {
         useNewUrlParser: true,
         socketTimeoutMS: 0,
-        keepAlive: true
+        keepAlive: true,
+        useUnifiedTopology: true
     }
 )
+
+mongoose.set('strictQuery', true);
+
 const genreSchema = new mongoose.Schema({
     "_id": Number,
     "name": {
@@ -49,4 +53,4 @@ const movieSchema = new mongoose.Schema({
     genres: [genreSchema]
 });
 
-const Movie = mongoose.model("movies1", movieSchema);
+Movie = mongoose.model("movies1", movieSchema);
