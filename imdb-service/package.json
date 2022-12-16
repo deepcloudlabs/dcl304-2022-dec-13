@@ -4,7 +4,8 @@
   "description": "",
   "main": "application.js",
   "scripts": {
-    "middleware": "node --trace-warnings application.js",
+    "middleware-dev": "node --trace-warnings application.js",
+    "middleware-production": "set UV_THREADPOOL_SIZE=48  & node application.js",
     "websocket-client": "node --trace-warnings clients/websocket-client.js",
     "socketio-client": "node --trace-warnings clients/socketio-client-app.js",
     "kafka-consumer": "node --trace-warnings clients/imdb-kafka-consumer.js"

@@ -18,7 +18,7 @@ class ImdbApiCommand {
                     } else {
                         res.status(200).send(status);
                         let message = JSON.stringify(movie);
-                        plainWebSocketService.sendMessage(message);
+                        this.plainWebSocketService.sendMessage(message);
                         this.socketIOService.sendMessage("movie-events", message);
                         this.kafkaProducer.send({
                             topic: "imdb",

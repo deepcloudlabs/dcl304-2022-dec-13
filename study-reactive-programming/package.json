@@ -1,0 +1,19 @@
+{
+  "name": "study-reactive-programming",
+  "version": "1.0.0",
+  "scripts": {
+    "exercise02": "node exercise02.js",
+    "exercise03": "node exercise03.js",
+    "exercise04": "node exercise04.js",
+    "exercise05": "node exercise05.js",
+    "rxjs-exercise01": "node rxjs-examples/exercise01.js",
+    "rxjs-exercise02": "node rxjs-examples/exercise02.js",
+    "rxjs-exercise03": "node rxjs-examples/exercise03.js",
+    "rxjs-exercise04": "node rxjs-examples/exercise04.js"
+  },
+  "dependencies": {
+    "ws": "^8.11.0",
+    "node-fetch": "2.6.7",
+    "rxjs": "^7.8.0"
+  }
+}

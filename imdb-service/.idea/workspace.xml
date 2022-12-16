@@ -5,15 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="531b7c98-7522-4b16-a927-646dd9617459" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/web-client/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-client/socketio-client.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-client/websocket-client.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../workspace-dcl304-2022-dec-13-day3.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/.idea/study-reactive-programming.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/exercise01.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/exercise02.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/exercise03.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/exercise04.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/exercise05.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/resources/trade.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/rxjs-examples/exercise01.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/rxjs-examples/exercise02.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/rxjs-examples/exercise03.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/rxjs-examples/exercise04.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../study-reactive-programming/utility.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/api-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/socketio-client-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/clients/socketio-client-app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/integration/socketio-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/integration/socketio-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/imdb-api-command.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/imdb-api-command.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/application.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,15 +89,22 @@
       <recent name="D:\var\workspace\github\dcl304-2022-dec-13\imdb-service\utility" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.application.js">
-    <configuration name="application.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/application.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.kafka-consumer">
     <configuration name="kafka-consumer" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="kafka-consumer" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="middleware-dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="middleware-dev" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -123,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.middleware" />
         <item itemvalue="npm.kafka-consumer" />
         <item itemvalue="npm.socketio-client" />
         <item itemvalue="npm.websocket-client" />
-        <item itemvalue="Node.js.application.js" />
+        <item itemvalue="npm.middleware-dev" />
+        <item itemvalue="npm.middleware" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671022978046</updated>
       <workItem from="1671022979531" duration="1784000" />
-      <workItem from="1671083773050" duration="34885000" />
+      <workItem from="1671083773050" duration="41978000" />
     </task>
     <servers />
   </component>
