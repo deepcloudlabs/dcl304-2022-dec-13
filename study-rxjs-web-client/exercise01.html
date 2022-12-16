@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Exercise 1</title>
-    <script src="node_modules/rxjs/dist/esm/index.js"></script>
+    <style>
+        .box {
+            width: 256px;
+            height: 256px;
+            background-color: green;
+        }
+    </style>
+    <script src="node_modules/rxjs/dist/bundles/rxjs.umd.js"></script>
     <script>
-
+        window.onload = () => {
+            rxjs.fromEvent(
+                document.querySelector(".box"),
+                'click'
+            ).pipe(
+                rxjs.throttleTime(3_000)
+            ).subscribe((e)=>{
+                console.log(`Clicked at (${e.clientX},${e.clientY}).`)
+            })
+        } ;
     </script>
 </head>
 <body>
-
+<div class="box"></div>
 </body>
 </html>

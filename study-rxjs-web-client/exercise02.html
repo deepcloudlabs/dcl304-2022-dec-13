@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="node_modules/rxjs/dist/bundles/rxjs.umd.js"></script>
+    <script>
+        const observable = new rxjs.Observable(observer => {
+            const ws = new WebSocket("ws://localhost:8200/events");
+            ws.onopen = () => {
+                console.log("Connected to the server");
+            };
+            ws.onmessage = (event) => {
+                const trade = JSON.parse(event.data);
+                observer.next(trade);
+//                console.log(`New trade has arrived from websocket server: ${trade.p}.`)
+            };
+            ws.onclose = () => {
+                console.log("Disconnected from the server");
+            };
+        });
+
+        let subscription = observable.pipe(
+            rxjs.filter(trade => Number(trade.q) >= 1),
+            rxjs.map(trade =>  {
+                let newTrade = {}
+                newTrade.symbol= trade.s;
+                newTrade.price= Number(trade.p);
+                newTrade.quantity= Number(trade.q);
+                newTrade.volume = newTrade.price * newTrade.quantity;
+                newTrade.timestamp = new Date(trade.T);
+                return newTrade;
+            })
+        ).subscribe(console.log);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
