@@ -6,6 +6,7 @@
     "exercise03": "node exercise03.js",
     "exercise04": "node exercise04.js",
     "exercise05": "node exercise05.js",
+    "exercise06": "set UV_THREADPOOL_SIZE=50 & node exercise06.js",
     "binance-ws-service": "node binance-ws-service.js",
     "rxjs-exercise01": "node rxjs-examples/exercise01.js",
     "rxjs-exercise02": "node rxjs-examples/exercise02.js",
